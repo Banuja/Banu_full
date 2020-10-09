@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke" verbose="1" configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="report.ExtentReportListener" />
+    </listeners>
+    <test name="Smoke">
+        <groups>
+            <run>
+                <include name="Smoke" />
+            </run>
+        </groups>
+
+        <classes>
+
+
+            <!--Master-->
+            <class name="com.test.qa.Full_Code.Full_Master">
+
+        </classes>
+    </test>
+</suite>
