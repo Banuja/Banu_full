@@ -19,7 +19,7 @@ public class Config_Data extends TestBase {
         PageBase.staticWait(10);
         MethodBase.click_ByXpath("//*[@style=\"background: rgb(0, 19, 40); color: white; border: none; width: auto; margin-left: -10px;\"]");//click add test
         PageBase.staticWait(10);
-        MethodBase.setText_ByID("test_name", "AB_Test");//set test name
+        MethodBase.setText_ByID("test_name", "BA_Test");//set test name
         PageBase.staticWait(10);
         MethodBase.click_ByXpath("//*[@style=\"background: rgb(0, 19, 40); color: white; border: none;\"]");// click save btn
         MethodBase.isDisplayed_ByXpath("//*[@style=\"font-size: medium; font-weight: 600; align-self: auto; padding: 10px;\"]");//save page display
@@ -176,7 +176,7 @@ public class Config_Data extends TestBase {
         MethodBase.click_ByXpath("//*[@id=\"test_type\"]/div");//click test type
         PageBase.staticWait(10);
         MethodBase.hitEnter();
-        MethodBase.setText_ByID("prefix","JAS");//set prefix
+        MethodBase.setText_ByID("prefix","J01");//set prefix
         MethodBase.click_ByXpath("//*[@id=\"main_category\"]/div/div");//click main category
         MethodBase.hitEnter();
         MethodBase.click_ByXpath("//*[@id=\"sub_category\"]/div/div"); // click subcategory
@@ -186,9 +186,10 @@ public class Config_Data extends TestBase {
         MethodBase.hitEnter();
         MethodBase.setText_ByID("description","data");// set description
         MethodBase.setText_ByID("procedure","procedure"); // set procedure
-        MethodBase.click_ByXpath("//*[@id=\"report_format\"]"); // click reportformat
-        MethodBase.hitEnter();
+        MethodBase.click_ById("report_format"); // click reportformat
+        MethodBase.click_ById("coretest");//KeyTest
         MethodBase.click_ByXpath("//*[@id=\"root\"]/div/section/section/main/div/div[2]/div/div/div[2]/div[5]/button"); // click Submit button
+        PageBase.staticWait(10);
 
         /** fill the data for second  step ,Checkbox button [TEST PARAMETER 02 ]  */
 
